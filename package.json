@@ -1,7 +1,7 @@
 {
   "name": "hello-react",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -13,6 +13,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "precommit": "grunt lint",
-    "prepush": "echo Yeaah!"
+    "prepush": "echo"
   }
 }
