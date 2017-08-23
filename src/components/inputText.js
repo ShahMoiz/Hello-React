@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Glyphicons from './glyphicons'
 
 export default class InputText extends React.Component {
     constructor(){
@@ -31,8 +31,8 @@ export default class InputText extends React.Component {
                 }} disabled={!this.state.isEdditing}/>
                 {
                     this.state.isEdditing ? 
-                <button onClick={() => this.updateValue(this.input.value)}>Update</button> :
-                <button onClick={() => this.edit()}>edit</button>    
+                <button onClick={() => this.updateValue(this.input.value)}>Update <Glyphicons icon="ok"/></button> :
+                <button onClick={() => this.edit()} >edit <Glyphicons icon="pencil"/></button>    
                 }  
             </div>
         )
